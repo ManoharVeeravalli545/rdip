@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<style>
+		tr,td{
+			padding-bottom: 10px;
+			padding-left:10px;
+		}
+		tr{
+			text-align: center;
+		}
+		td{
+			padding-right: 20px;
+			padding-left:10px;
+		}
+		img {
+			  height: 70px;
+			  width:100px;
+			  margin: auto;
+			  background-attachment: scroll;
+			}
+		.rightside{
+			position: absolute;
+			top:30px;
+			right:40px;
+			font-size: 32px;
+			font-family: serif;
+			}
+
+		.leftside{
+					
+				position:absolute;
+				top: 30px;
+				left: 16px;
+				font-size: 18px;
+				
+			}
+		ul{
+			  overflow: hidden;
+			  background-color: #333333;
+			  margin:0px;
+			  padding:0px;
+			  
+			}
+
+		ul li a{
+			 
+			  float: left;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 15px 20px;
+			  text-decoration: none;
+			  font-size: 15px;
+			  margin:5px;
+
+			}
+		.details{
+			padding-left: 10px;
+			padding-top:20px;
+		        }
+		
+	</style>
+</head>
+<body>
+	<div class="leftside">
+		<a href="https://www.iiit.ac.in/"><img src="iiith.png" alt="IIIT HYDERABAD"></a>
+	</div>
+	<div class="rightside"><a href="https://serc.iiit.ac.in/rdip">RDIP</div>
+	<br><br><br><br><br><br><br>
+	<ul type="none">
+		<li><a href="homepage.html">Home</a></li>
+		<li><a href="registration.html">Registration Form</a></li>
+	</ul>
+	<br><br><br>
+	<div class="details">
+		<form action="details.html">
+			<table>
+				<tr>
+					<td><b> First Name :     </b></td>
+					<td><input type="text" name="fname"   required></td>
+				</tr>
+				<tr>
+					<td><b> Email :     </b></td>
+					<td><input type="text" name="email"   required></td>
+				</tr>
+				<tr>
+					<td><b> Phone Number :     </b></td>
+					<td><input type="text" name="phno"   required></td>
+				</tr>
+				<tr>
+					<td><b>Gender : </b></td>
+					<td><input type="radio" name="gender" value="male" required>
+						<label><b>Male</b></label>
+						<input type="radio" name="gender"  value="Female">
+						<ladbel><b>Female</b></label>
+						<input type="radio" name="gender"  value="Other">
+						<label><b>Other</b></label>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Reason for RDIP : </b></td>
+					<td><input type="radio" name="rea" value="html" required>
+						<b>HTML</b>
+						<input type="radio" name="rea"  value="css">
+						<b>CSS</b>
+						<input type="radio" name="rea"  value="js">
+						<b>JavaScript</b>
+					</td>
+				</tr>
+				<tr>
+					<td><b> College :     </b></td>
+					<td><input type="text" name="clg"   required></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="declaration"   required></td>
+					<td><label><b>I declare above details given by me are true.</b></label></td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="submit"></td>
+					<td><input type="reset" name="reset"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	
+</body>
+</html>
