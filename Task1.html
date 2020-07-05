@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>CALCULATOR</title>
+<script src="main.js"></script>
+<style>
+.title{
+margin-bottom: 10px;
+text-align:center;
+width: 200px;
+color:blue;
+border: solid black 2px;
+}
+
+button
+{
+background-color:pink;
+color: blue;
+border: solid blue 2px;
+width:100%
+}
+
+input[type="text"]
+{
+background-color:white;
+border: solid black 2px;
+width:100%
+}
+</style>
+
+</head>
+<body>
+<table class="title">
+<h3>MY CALCULATOR</h3>
+<tr>
+<th colspan="4"><input type="text" id="result" /></th>
+</tr>
+
+<tr>
+<td>
+<button value="7" onclick="dis('7')">7</button>
+</td>
+<td>
+<button value="8" onclick="dis('8')">8</button>
+</td>
+<td>
+<button value="9" onclick="dis('9')">9</button>
+</td>
+<td>
+<button value="C" onclick="clr()">C</button>
+</td>
+</tr>
+
+<tr>
+<td>
+<button value="4" onclick="dis('4')">4</button>
+</td>
+<td>
+<button value="5" onclick="dis('5')">5</button>
+</td>
+<td>
+<button value="6" onclick="dis('6')">6</button>
+</td>
+<td>
+<button value="√" onclick="dis('√')">√</button>
+</td>
+</tr>
+
+<tr>
+<td>
+<button value="1" onclick="dis('1')">1</button>
+</td>
+<td>
+<button value="2" onclick="dis('2')">2</button>
+</td>
+<td>
+<button value="3" onclick="dis('3')">3</button>
+</td>
+<td>
+<button value="/" onclick="dis('/')">/</button>
+</td>
+</tr>
+<tr>
+<td>
+<button value="." onclick="dis('.')">.</button>
+</td>
+<td>
+<button value="0" onclick="dis('0')">0</button>
+</td>
+<td>
+<button value="%" onclick="dis('%')">%</button>
+</td>
+<td>
+<button value="*" onclick="dis('*')">*</button>
+</td>
+</tr>
+
+<tr>
+<td>
+<button value="+" onclick="dis('+')">+</button>
+</td>
+<td>
+<button value="-" onclick="dis('-')">-</button>
+</td>
+
+<td colspan="2">
+<button style="height: 20; width: 100;" onclick="abs()">
+abs
+</button>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<button style="height: 20; width: 100;" value="abs" onclick="solve()">=
+
+</button>
+</td>
+</tr>
+</table>
+</body>
+</html>
